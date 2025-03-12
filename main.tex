@@ -1,0 +1,195 @@
+\documentclass[12pt]{article}
+\usepackage{preamble}
+\usepackage{longtable}
+
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2cm, bottom=2.5cm}
+
+\pagestyle{plain}
+
+\newcommand{\placeholder}[1]{{\color{magenta}#1}}
+
+\chead{
+    \begin{minipage}{1\linewidth}
+        \begin{wrapfigure}{r}{0pt}
+            \includegraphics[height=1cm]{images/logo}
+        \end{wrapfigure}
+        {
+            \centering
+            \sffamily\scriptsize
+            \textbf{
+                Санкт-Петербургский национальный исследовательский университет \\
+                информационных технологий, механики и оптики}
+            %th3p4g
+            \vspace{2mm}
+
+            \quad\quad\quad\quad\quad\quad\ \textbf{УЧЕБНЫЙ ЦЕНТР ОБЩЕЙ ФИЗИКИ ФТФ}
+        }
+    \end{minipage}
+}
+
+
+
+\begin{document}
+    \vspace*{2\baselineskip}
+
+    \thispagestyle{fancy}
+
+    \noindent
+    \textbf{Группа} \underline{M3200\hspace{4.5cm}} \hfill \textbf{К работе допущен} \underline{\hspace{4cm}} \\[0.5cm]
+    \textbf{Студенты} \underline{Комашко А., Семёнов Д.\hspace{0.45cm}} \hfill \textbf{Работа выполнена} \underline{\hspace{4cm}} \\[0.5cm]
+    \textbf{Преподаватель} \underline{Шоев В. И.\hspace{1.9cm}} \hfill \textbf{Отчет принят} \underline{\hspace{4.85cm}} \\
+
+
+
+    \begin{center}
+    {\huge \textbf{Рабочий протокол и отчёт по\\ лабораторной работе № 3.07}}
+
+        \smallvspace
+
+        {\Large Изучение свойств ферромагнетика}
+    \end{center}
+
+
+    \noindent
+    1. \textbf{Цель работы.}
+
+    \begin{enumerate}
+        \item Измерение зависимости магнитной индукции в ферромагнетике от напряженности магнитного поля $B = B(H)$
+        \item Определение по предельной петле гистерезиса индукции насыщения, остаточной индукции и коэрцитивной силы
+        \item Получение зависимости магнитной проницаемости от напряженности магнитного поля $\mu = \mu(H)$ и оценка максимального значения величины магнитной проницаемости
+        \item Расчет мощности потерь энергии в ферромагнетике в процессе его перемагничивания
+    \end{enumerate}
+
+    \mediumvspace
+
+    \noindent
+    2. \textbf{Задачи, решаемые при выполнении работы.}
+
+    \begin{enumerate} 
+        \item Измерение значений параметров предельной петли гистерезиса.
+        \item Построение кривой начального намагничивания $B_m = B_m(H_m)$ и графика зависимости магнитной проницаемости $\mu = \mu(H)$ от напряженности магнитного поля
+        \item Вычисление максимального значения магнитной проницаемости
+    \end{enumerate}
+
+    \mediumvspace
+
+    \noindent
+    3. \textbf{Объект исследования: } 
+
+    Для изучения магнитных свойств ферромагнитного материала выбран сердечник (магнитопровод) трансформатора. Объект измерений имеет прямоугольную форму с прямоугольным же поперечным сечением.
+
+    \mediumvspace
+
+    \noindent
+    4. \textbf{Метод экспериментального исследования.}
+
+    Прямые и косвенные измерения параметров предельной петли гистерезиса при изменении амплитудных значений напряжённости и индукции магнитного поля.
+
+    \mediumvspace
+
+    \noindent
+    5. \textbf{Рабочие формулы и исходные данные.}
+
+    \input{05_formulas}
+
+    \mediumvspace
+
+    \newpage
+
+    \noindent
+    6. \textbf{Измерительные приборы.}
+
+    \smallvspace
+
+    \input{table1}
+
+    \mediumvspace
+
+    \noindent
+    7. \textbf{Схема установки. (перечень схем, которые составляют Приложение 1).}
+
+    \hyperlink{schema1}{Схема установки} прилагается в Приложении 1
+
+    \mediumvspace
+
+    \noindent
+    8. \textbf{Результаты прямых измерений и их обработки (таблицы, примеры расчетов).}
+
+    \input{08_measure_results}
+
+    \mediumvspace
+
+    \noindent
+    
+    9. \textbf{Расчёт погрешности измерений.}
+    
+    \input{10_measure_error_results}
+
+    \mediumvspace
+
+    \noindent
+    10. \textbf{Графики (перечень графиков, которые составляют Приложение 3).}
+
+    \begin{itemize}
+        \item \hyperlink{diagram1}{Кривая начального намагничивания $B_m = B_m(H_m)$}
+        \item \hyperlink{diagram2}{Зависимость магнитной проницаемости $\mu = \mu(H_m)$ от напряженности магнитного поля}
+        \item \hyperlink{diagram3}{Петля гистерезиса ферромагнетика}
+        \item \hyperlink{diagram4}{Интерполяция петли гистерезиса ферромагнетика}
+    \end{itemize}
+
+    \mediumvspace
+
+    \noindent
+    11. \textbf{Окончательные результаты.}
+
+    \input{12_final_results}
+
+    \mediumvspace
+
+    \noindent
+
+    \newpage
+    
+    12. \textbf{Выводы и анализ результатов работы.}
+
+    \input{13_summary}
+
+    \clearpage
+
+    \begin{center}
+        \LARGE
+        \textbf{Приложение 1. Схема установки}
+    \end{center}
+
+    \mediumvspace
+
+    \input{schema}
+
+    \clearpage
+
+    \begin{center}
+        \LARGE
+        \textbf{Приложение 2. Таблицы измерений и расчётов}
+    \end{center}
+
+    \mediumvspace
+
+    \input{table2}
+
+    \input{table3}
+
+    \input{table4}
+
+    \clearpage
+
+    \begin{center}
+        \LARGE
+        \textbf{Приложение 3. Графики}
+    \end{center}
+
+    \mediumvspace
+
+    \input{diagram1}
+
+
+\end{document}
